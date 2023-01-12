@@ -5,7 +5,7 @@
 Add your responses underneath each prompt. 
 
 Your tone should be professional but informal: imagine that you are responding to these questions in an email after they were asked by a colleague or manager who stopped by your office on the way to a meeting.
-#Test#
+
 ---
 
 1. Who was the top salesperson for the year?
