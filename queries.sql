@@ -1,8 +1,9 @@
 -- Problem 1 & 2
 -- 1. Using JOINs in a single query, combine data from all three tables (employees, products, sales) to view all sales with complete employee and product information in one table.
 
--- SELECT * FROM sales JOIN employees ON sales.SalesPersonID = employees.EmployeeID JOIN products ON sales.ProductID = products.ProductID;
-
+-- SELECT * FROM sales JOIN employees ON sales.SalesPersonID = employees.EmployeeID Join products ON sales.ProductID = products.ProductID;
+-- SELECT * FROM sales CROSS JOIN employees ON sales.SalesPersonID = employees.EmployeeID CROSS JOIN products ON sales.ProductID = products.ProductID;
+ 
 -- 2a. Create a View for the query you made in Problem 1 named "all_sales"
 -- NOTE: You'll want to remove any duplicate columns to clean up your view!
 
@@ -22,6 +23,11 @@
 
 -- SELECT EmployeeID, FirstName, ROUND((SUM(price * Quantity)), 2) AS TotalSales FROM all_sales GROUP BY EmployeeID, FirstName ORDER BY TotalSales DESC LIMIT 3;
 
+-- Problem 5
+-- Find the product that has the highest price
+
+SELECT Name, Price FROM all_sales ORDER BY Price DESC LIMIT 1;
+ 
 -- Problem 6
 -- Find the product that was sold the most times
 
