@@ -26,7 +26,7 @@
 -- Problem 5
 -- Find the product that has the highest price
 
-SELECT Name, Price FROM all_sales ORDER BY Price DESC LIMIT 1;
+-- SELECT Name, Price FROM all_sales ORDER BY Price DESC LIMIT 1;
  
 -- Problem 6
 -- Find the product that was sold the most times
